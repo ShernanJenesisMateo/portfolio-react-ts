@@ -1,9 +1,10 @@
 import './styleGlobal.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App text-3xl font-bold underline">
-      <h1>??????</h1>
+    <div className="App"> 
+      <Navbar />
     </div>
   );
 }
