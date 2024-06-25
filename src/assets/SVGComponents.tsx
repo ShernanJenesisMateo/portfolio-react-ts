@@ -1,0 +1,35 @@
+import {
+    JavaSVG,
+    PythonSVG,
+    JavaScriptSVG,
+    TypeScriptSVG,
+    HtmlSVG,
+    CssSVG,
+    TailwindSVG,
+    BootstrapSVG,
+    ReactSVG,
+    SpringbootSVG,
+    GitSVG,
+    GithubSVG,
+    PostgreSqlSVG,
+    MySqlSVG,
+    PostmanSVG
+} from './ToolsSVG';
+
+export const svgComponents = [
+    { Component: JavaSVG, name: 'Java' },
+    { Component: PythonSVG, name: 'Python' },
+    { Component: JavaScriptSVG, name: 'JavaScript' },
+    { Component: TypeScriptSVG, name: 'Typescript' },
+    { Component: HtmlSVG, name: 'Html' },
+    { Component: CssSVG, name: 'Css' },
+    { Component: TailwindSVG, name: 'Tailwind' },
+    { Component: BootstrapSVG, name: 'Bootstrap' },
+    { Component: ReactSVG, name: 'React' },
+    { Component: SpringbootSVG, name: 'Springboot' },
+    { Component: GitSVG, name: 'Git' },
+    { Component: GithubSVG, name: 'Github' },
+    { Component: PostgreSqlSVG, name: 'PostgreSql' },
+    { Component: MySqlSVG, name: 'MySql' },
+    { Component: PostmanSVG, name: 'Postman' },
+];
