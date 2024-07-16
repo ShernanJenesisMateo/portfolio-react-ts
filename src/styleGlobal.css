@@ -18,3 +18,33 @@
     font-weight: 400;
     font-style: normal;
 }
+.max-w-lg {
+    transition: transform 0.3s ease;
+  }
+
+.project-card {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin: 1rem;
+  }
+  .project-card {
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    filter: brightness(1.2);
+  }
+  .highlighted {
+    transform: scale(1.5); /* Example: Larger scale for highlighted project */
+    filter: none; /* Remove any filters applied */
+    z-index: 1; /* Ensure highlighted project is on top */
+  }
+  
+  .dimmed {
+    filter: brightness(70%); /* Example: Lower brightness for dimmed projects */
+  }
+  .dimmed:hover{
+    filter: brightness(70%);
+  }
