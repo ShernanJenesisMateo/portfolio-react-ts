@@ -36,7 +36,7 @@ import { author } from '../utilities/profile';
 const Navbar = () => {
   return (
     <div className='fixed w-screen inset-0 z-10 h-16'>
-      {/* <div className="navbar bg-base/30 backdrop-blur-xl"> */}
+      <div className="navbar bg-base/30 backdrop-blur-xl">
       <div className="navbar">
         <div className="flex-1 px-5">
           <a className="btn btn-ghost text-2xl" href='#HeroSectionId'>{author.name}</a>
@@ -78,6 +78,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   )
 }

@@ -11,17 +11,17 @@ function App() {
       <div className=''>
         <Navbar />
       </div>
-      <div className='my-border-green overflow-auto mt-16 h-full relative scroll-hidden'>
-        <div className='flex items-center justify-center my-border-blue h-full' id='HeroSectionId'>
+      <div className='overflow-auto mt-16 h-full relative scroll-hidden'>
+        <div className='flex items-center justify-center h-full' id='HeroSectionId'>
           <Hero />
         </div>
-        <div className='flex items-center justify-center my-border-green' id='AboutSectionId'>
+        <div className='flex items-center justify-center' id='AboutSectionId'>
           <About />
         </div>
-        <div className='flex items-center justify-center my-border-red' id='JourneySectionId'>
+        <div className='flex items-center justify-center' id='JourneySectionId'>
           <Journey />
         </div>
-        <div className='flex items-center justify-center my-border-blue py-20' id='ProjectsSectionId'>
+        <div className='flex items-center justify-center py-20' id='ProjectsSectionId'>
           <Projects />
         </div>
       </div>

@@ -30,7 +30,7 @@ const Projects = () => {
   return (
     <div className="relative w-10/12 h-full">
       <h3 className='text-4xl py-2 font-bold mb-10'>Projects</h3>
-      <div className="flex justify-center items-center space-x-4 w-full my-border-red relative">
+      <div className="flex justify-center items-center space-x-4 w-full relative">
         <button
           className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full hover:bg-gray-300 z-10"
           onClick={goToPrevious}
