@@ -12,7 +12,7 @@ function App() {
         <Navbar />
       </div>
       <div className='h-screen'>
-        <div className='flex items-center justify-center h-full'>
+        <div className='flex items-center justify-center h-full' id='HeroSectionId'>
           <Hero />
         </div>
         <div className='flex justify-center h-4/5 my-border-green' id='AboutSectionId'>

@@ -1,4 +1,4 @@
-import { milestones } from "../utilities/profile"
+
 import { svgComponents } from "../assets/SVGComponents"
 
 const About = () => {
@@ -24,7 +24,7 @@ const About = () => {
                  <div className="w-1/4 h-3/4 flex items-center justify-center ">
                      <img className="" 
                      src="/assets/images/myPic_withoutBG.png" 
-                     alt="Image of Shernan" />
+                     alt="Shernan Jenesis Mateo" />
                  </div>
              </div>
                     <br />

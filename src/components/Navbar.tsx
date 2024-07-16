@@ -39,7 +39,7 @@ const Navbar = () => {
     <div className='fixed inset-x-0 z-10'>
       <div className="navbar bg-base/30 backdrop-blur-xl">
         <div className="flex-1 px-5">
-          <a className="btn btn-ghost text-2xl">{author.name}</a>
+          <a className="btn btn-ghost text-2xl" href='#HeroSectionId'>{author.name}</a>
         </div>
         <div className="flex-none px-5">
           <ul className="menu menu-horizontal flex gap-5 items-center font-semibold">
