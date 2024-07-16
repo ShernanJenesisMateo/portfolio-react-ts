@@ -2,7 +2,7 @@ import { author } from '../utilities/profile'
 
 const Hero = () => {
     return (
-        <div className='w-10/12'>
+        <div className='w-10/12 mt-16'>
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div>
                     <h3 className='text-3xl py-2'>Hello there!</h3>

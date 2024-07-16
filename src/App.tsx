@@ -7,26 +7,26 @@ import Projects from './components/Projects';
 
 function App() {
   return (
-    <div className="App flex flex-col">
-      <div className='flex-none absolute w-full'>
+    <div className="App h-screen flex flex-col">
+      <div className=''>
         <Navbar />
       </div>
-      <div className='h-screen'>
-        <div className='flex items-center justify-center h-full' id='HeroSectionId'>
+      <div className='my-border-green overflow-auto mt-16 h-full relative scroll-hidden'>
+        <div className='flex items-center justify-center my-border-blue h-full' id='HeroSectionId'>
           <Hero />
         </div>
-        <div className='flex justify-center h-4/5 my-border-green' id='AboutSectionId'>
+        <div className='flex items-center justify-center my-border-green' id='AboutSectionId'>
           <About />
         </div>
-        <div className='flex justify-center h-4/5' id='JourneySectionId'>
+        <div className='flex items-center justify-center my-border-red' id='JourneySectionId'>
           <Journey />
         </div>
-        <div className='flex justify-center h-4/5' id='ProjectsSectionId'>
+        <div className='flex items-center justify-center my-border-blue py-20' id='ProjectsSectionId'>
           <Projects />
         </div>
       </div>
-
     </div>
+
   );
 }
 

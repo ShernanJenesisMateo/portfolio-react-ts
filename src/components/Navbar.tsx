@@ -32,41 +32,41 @@
 
 
 import { author } from '../utilities/profile';
-import { Link } from 'react-scroll';
 
 const Navbar = () => {
   return (
-    <div className='fixed inset-x-0 z-10'>
-      <div className="navbar bg-base/30 backdrop-blur-xl">
+    <div className='fixed w-screen inset-0 z-10 h-16'>
+      {/* <div className="navbar bg-base/30 backdrop-blur-xl"> */}
+      <div className="navbar">
         <div className="flex-1 px-5">
           <a className="btn btn-ghost text-2xl" href='#HeroSectionId'>{author.name}</a>
         </div>
         <div className="flex-none px-5">
           <ul className="menu menu-horizontal flex gap-5 items-center font-semibold">
             <li>
-              <Link to='AboutSectionId' smooth={true} duration={500}>
+              <a href='#AboutSectionId'>
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to='SkillsSectionId' smooth={true} duration={500}>
+              <a href='#SkillsSectionId'>
                 Skills
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to='JourneySectionId' smooth={true} duration={500}>
+              <a href='#JourneySectionId'>
                 Journey
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to='ProjectsSectionId' smooth={true} duration={500}>
+              <a href='#ProjectsSectionId'>
                 Projects
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to='FooterSectionId' smooth={true} duration={500}>
+              <a href='#FooterSectionId'>
                 Contact
-              </Link>
+              </a>
             </li>
             <label className="swap swap-rotate">
               <input type="checkbox" className="theme-controller" value="dim" />

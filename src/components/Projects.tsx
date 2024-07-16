@@ -8,33 +8,36 @@ const projects = [
   { id: 3, name: 'Project 3', description: 'Description 3', link: '#', image: '/assets/images/projects/project3.png' },
   { id: 4, name: 'Project 4', description: 'Description 4', link: '#', image: '/assets/images/projects/project4.png' },
   { id: 5, name: 'Project 5', description: 'Description 5', link: '#', image: '/assets/images/projects/project5.png' },
-
 ];
 
 const Projects = () => {
   const [startIndex, setStartIndex] = useState(0);
 
   const goToNext = () => {
-    setStartIndex((prevIndex) => (prevIndex === projects.length - 1 ? 0 : prevIndex + 1));
+    setStartIndex((prevIndex) => (prevIndex + 1) % projects.length);
   };
 
   const goToPrevious = () => {
-    setStartIndex((prevIndex) => (prevIndex === 0 ? projects.length - 3 : prevIndex - 1));
+    setStartIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
   };
 
-  const visibleProjects = projects.slice(startIndex, startIndex + 3);
+  const visibleProjects = [
+    projects[startIndex],
+    projects[(startIndex + 1) % projects.length],
+    projects[(startIndex + 2) % projects.length]
+  ];
 
   return (
     <div className="relative w-10/12 h-full">
       <h3 className='text-4xl py-2 font-bold mb-10'>Projects</h3>
-      <div className="flex justify-center items-start space-x-4 w-full h-3/4 myborder-red">
+      <div className="flex justify-center items-center space-x-4 w-full my-border-red relative">
         <button
-          className="absolute left-4 top-1/3 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full hover:bg-gray-300 z-10"
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full hover:bg-gray-300 z-10"
           onClick={goToPrevious}
         >
           <AiOutlineArrowLeft className="text-gray-600" />
         </button>
-        <div className="grid grid-cols-3 gap-4 w-full h-2/4 project-main-card">
+        <div className="flex flex-wrap justify-center gap-4 w-full h-2/4 project-main-card">
           {visibleProjects.map((project, index) => (
             <a
               key={project.id}
@@ -44,8 +47,8 @@ const Projects = () => {
               className={`project-card ${index === 1 ? 'highlighted' : 'dimmed'}`}
               style={{
                 backgroundImage: `url(${project.image})`,
-                backgroundSize: 'cover', 
-                backgroundRepeat: 'no-repeat', 
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
               }}
             >
               <img
@@ -69,7 +72,7 @@ const Projects = () => {
           ))}
         </div>
         <button
-          className="absolute right-0 top-1/3 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full hover:bg-gray-300"
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full hover:bg-gray-300"
           onClick={goToNext}
         >
           <AiOutlineArrowRight className="text-gray-600" />
