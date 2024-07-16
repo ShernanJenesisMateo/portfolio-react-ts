@@ -15,13 +15,13 @@ function App() {
         <div className='flex items-center justify-center h-full'>
           <Hero />
         </div>
-        <div className='flex justify-center h-4/5'>
+        <div className='flex justify-center h-4/5 my-border-green' id='AboutSectionId'>
           <About />
         </div>
-        <div className='flex justify-center h-4/5'>
+        <div className='flex justify-center h-4/5' id='JourneySectionId'>
           <Journey />
         </div>
-        <div className='flex justify-center h-4/5'>
+        <div className='flex justify-center h-4/5' id='ProjectsSectionId'>
           <Projects />
         </div>
       </div>
