@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                 </nav> */}
                 <div className="flex justify-center space-x-5">
-                    <a href="" className='w-8 h-8'>
+                    <a href="https://linkedin.com" className='w-8 h-8'>
                         <GithubSVG />
                     </a>
                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className='w-8 h-8'>
