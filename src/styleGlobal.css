@@ -4,6 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
+/* @font-face {
+  font-family: 'mysignature';
+  src: url('../src/assets/fonts/Agutina\ 400.otf') format('opentype');
+} */
+@font-face {
+  font-family: 'agustina';
+  src: url('../public/fonts/Agustina-Signature.otf') format('opentype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .my-border-main{
   border: 5px solid violet;
 }

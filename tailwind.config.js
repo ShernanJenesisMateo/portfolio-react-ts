@@ -5,7 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-    
+      fontFamily: {
+        mysignature: ['agustina', 'sans-serif'],
+      },
     },
   },
   plugins: [
