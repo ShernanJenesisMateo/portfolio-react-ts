@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Journey from './components/Journey';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </div>
         <div className='flex items-center justify-center py-20' id='ProjectsSectionId'>
           <Projects />
+        </div>
+        <div className='flex items-center justify-center mt-20 bg-base-200' id='FooterSectionId'>
+          <Footer />
         </div>
       </div>
     </div>

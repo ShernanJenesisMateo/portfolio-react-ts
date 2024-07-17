@@ -2,8 +2,8 @@ import { milestones } from "../utilities/profile"
 
 const Journey = () => {
     return (
-        <div className='w-10/12'>
-            <div className="card-body">
+        <div className='w-10/12 my-20'>
+            <div className="card-body p-0">
                 <div>
                     <p className="text-2xl py-2 font-bold">
                         Here’s a little timeline of my journey :

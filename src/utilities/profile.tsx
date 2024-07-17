@@ -8,6 +8,7 @@ export const socials = {
     github: '',
     linkedin: '',
     instagram: '',
+    facebook: '',
 };
 
 export const milestones = [

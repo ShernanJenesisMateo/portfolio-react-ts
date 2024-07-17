@@ -29,6 +29,7 @@ const About = () => {
              </div>
                     <br />
                     <br />
+                    <br />
                     <div className="m-2 font-semibold text-xl w-full">
                         <p>I've been using these awesome tools and technologies to bring my projects to life!</p>
                     </div>
