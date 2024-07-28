@@ -7,7 +7,7 @@ const About = () => {
             <div className="h-full flex-col lg:flex-row-reverse">
                 <div className="h-full w-full">
                     <h3 className='text-4xl py-2 font-bold'>About me</h3>
-                    <div className="card card-side bg-base-100 items-center">
+                    <div className="card card-side items-center">
                         <div className="card-body w-3/4 p-0">
                             <div className="p-0 font-semibold text-xl w-full text-pretty">
                                 <p className="m-2">

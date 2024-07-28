@@ -4,10 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
-/* @font-face {
-  font-family: 'mysignature';
-  src: url('../src/assets/fonts/Agutina\ 400.otf') format('opentype');
-} */
 @font-face {
   font-family: 'agustina';
   src: url('../public/fonts/Agustina-Signature.otf') format('opentype');
@@ -38,14 +34,6 @@ html {
     transition: transform 0.3s ease;
   }
 
-  .scroll-hidden {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-  }
-  
-  .scroll-hidden::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
-  }
 .project-card {
     overflow: hidden;
     border-radius: 0.5rem;
