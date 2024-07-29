@@ -13,52 +13,99 @@ html {
   scroll-behavior: smooth;
 }
 
-.my-border-main{
+.my-border-main {
   border: 5px solid violet;
 }
-.my-border-red{
-    border: 2px solid red;
+
+.my-border-red {
+  border: 2px solid red;
 }
-.my-border-blue{
-    border: 2px solid blue;
+
+.my-border-blue {
+  border: 2px solid blue;
 }
-.my-border-green{
-    border: 2px solid green;
+
+.my-border-green {
+  border: 2px solid green;
 }
-.font-signature{
-    font-family: "Cedarville Cursive", cursive;
-    font-weight: 400;
-    font-style: normal;
+
+.font-signature {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
+
 .max-w-lg {
-    transition: transform 0.3s ease;
-  }
+  transition: transform 0.3s ease;
+}
 
 .project-card {
-    overflow: hidden;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, filter 0.3s ease;
-    margin: 1rem;
-    height: 350px;
-    width: 400px;
-  }
-  .project-card {
-    transition: filter 0.3s ease-in-out;
-  }
-  
-  .project-card:hover {
-    filter: brightness(1.2);
-  }
-  .highlighted {
-    transform: scale(1.5); /* Example: Larger scale for highlighted project */
-    filter: none; /* Remove any filters applied */
-    z-index: 1; /* Ensure highlighted project is on top */
-  }
-  
-  .dimmed {
-    filter: brightness(70%); /* Example: Lower brightness for dimmed projects */
-  }
-  .dimmed:hover{
-    filter: brightness(70%);
-  }
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  margin: 1rem;
+  height: 350px;
+  width: 400px;
+}
+
+.project-card {
+  transition: filter 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  filter: brightness(1.2);
+}
+
+.highlighted {
+  transform: scale(1.5);  /* Example: Larger scale for highlighted project */
+  filter: none; /* Remove any filters applied */
+  z-index: 1; /* Ensure highlighted project is on top */
+}
+
+.dimmed {
+  filter: brightness(70%); /* Example: Lower brightness for dimmed projects */
+}
+
+.dimmed:hover {
+  filter: brightness(70%);
+}
+
+
+/********** bg-blobs ************/
+.blob-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid red; */
+  position: absolute;
+}
+
+.blob-svg, .blob-path {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.blob1-container {
+  height: auto;
+  width: 50%;
+  top: 20%;
+  left: -15%;
+}
+
+.blob2-container {
+  height: auto;
+  width: 40%;
+  top: 150%;
+  left: 15%;
+}
+
+.blob3-container {
+  height: auto;
+  width: 70%;
+  top: -20%;
+  left: 50%;
+}
