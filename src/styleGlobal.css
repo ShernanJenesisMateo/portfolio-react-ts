@@ -58,54 +58,19 @@ html {
 }
 
 .highlighted {
-  transform: scale(1.5);  /* Example: Larger scale for highlighted project */
-  filter: none; /* Remove any filters applied */
-  z-index: 1; /* Ensure highlighted project is on top */
+  transform: scale(1.5);
+  /* Example: Larger scale for highlighted project */
+  filter: none;
+  /* Remove any filters applied */
+  z-index: 1;
+  /* Ensure highlighted project is on top */
 }
 
 .dimmed {
-  filter: brightness(70%); /* Example: Lower brightness for dimmed projects */
+  filter: brightness(70%);
+  /* Example: Lower brightness for dimmed projects */
 }
 
 .dimmed:hover {
   filter: brightness(70%);
-}
-
-
-/********** bg-blobs ************/
-.blob-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border: 3px solid red; */
-  position: absolute;
-}
-
-.blob-svg, .blob-path {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.blob1-container {
-  height: auto;
-  width: 50%;
-  top: 20%;
-  left: -15%;
-}
-
-.blob2-container {
-  height: auto;
-  width: 40%;
-  top: 150%;
-  left: 15%;
-}
-
-.blob3-container {
-  height: auto;
-  width: 70%;
-  top: -20%;
-  left: 50%;
 }
