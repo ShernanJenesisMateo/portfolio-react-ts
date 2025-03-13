@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import { lazy } from 'react';
 
 const GithubSVG = lazy(() => import('./SVGComponents').then(module => ({ default: module.GithubSVG })));
 const LinkedinSVG = lazy(() => import('./SVGComponents').then(module => ({ default: module.LinkedinSVG })));

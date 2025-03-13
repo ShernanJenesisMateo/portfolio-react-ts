@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import { lazy } from 'react';
 
 // Lazy load each SVG component
 const JavaSVG = lazy(() => import('./SVGComponents').then(module => ({ default: module.JavaSVG })));
