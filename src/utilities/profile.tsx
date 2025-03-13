@@ -17,18 +17,21 @@ export const milestones = [
         title: "Tsukiden Global Solutions Inc.",
         description: "Started my career in full-stack development, working on web applications, quality assurance, and international projects.",
         position: "timeline-start md:text-end",
+        link:"https://www.tsukiden.com.ph/"
     },
     {
         date: "July 2023",
         title: "Tarlac State University",
         description: "Earned my degree in Information Technology\nCum Laude",
         position: "timeline-end",
+        link:"https://www.tsu.edu.ph/"
     },
     {
         date: "January 2023 – May 2023",
         title: "Kaizenaire Pte. Ltd.",
         description: "Gained hands-on experience by developing Standard Operating Procedures, building the company website, collaborating with business leaders, and creating promotional content.",
         position: "timeline-start md:text-end",
+        link:"https://kaizenaire.com/"
     },
     
 ];

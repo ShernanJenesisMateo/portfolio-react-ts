@@ -1,5 +1,6 @@
 
-import { svgComponents } from "../assets/SVGComponents"
+import { Suspense } from "react"
+import { toolsSVG } from "../assets/ToolsSVG"
 
 const About = () => {
     return (
@@ -32,14 +33,16 @@ const About = () => {
                     </div>
                     <br />
                     <div className="flex flex-wrap gap-5 justify-center items-center">
-                        {svgComponents.map(({ Component, name }) => (
-                            <div key={name} className="flex flex-col items-center justify-center">
-                                <div className="w-10 h-10"> {/* Adjust width and height to desired size */}
-                                    <Component className="w-full h-full" /> {/* Ensure SVG fills its container */}
+                        <Suspense fallback={<div>Loading...</div>}>
+                            {toolsSVG.map(({ Component, name }) => (
+                                <div key={name} className="flex flex-col items-center justify-center">
+                                    <div className="w-10 h-10">
+                                        <Component className="w-full h-full" />
+                                    </div>
+                                    <p>{name}</p>
                                 </div>
-                                <p>{name}</p>
-                            </div>
-                        ))}
+                            ))}
+                        </Suspense>
                     </div>
                 </div>
             </div>

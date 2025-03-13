@@ -21,7 +21,7 @@ const Journey = () => {
                             </div>
                             <div className={`${milestone.position} mb-10`}>
                                 <time className="font-mono italic">{milestone.date}</time>
-                                <div className="text-lg font-black">{milestone.title}</div>
+                                <a href={milestone.link} target="_blank"><div className="text-lg font-black">{milestone.title}</div></a>
                                 <div>{milestone.description}</div>
                             </div>
                             <hr />
