@@ -71,10 +71,12 @@ import About from './components/About';
 import Journey from './components/Journey';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Background from './assets/Background';
 
 function App() {
   return (
     <div className="App h-screen flex flex-col relative">
+      <Background />
       <div className="">
         <Navbar />
       </div>
