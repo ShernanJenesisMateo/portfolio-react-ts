@@ -113,7 +113,7 @@ const Background: React.FC = () => {
     loop();
   }, []);
 
-  return <canvas ref={canvasRef} style={{ width: '100%', height: '100%', zIndex: -1, position: 'absolute', background: 'none' }} />;
+  return <canvas ref={canvasRef} style={{ width: '100%', height: '100%', zIndex: -1, position: 'absolute', background: 'none', opacity:'30%' }} />;
 };
 
 export default Background;

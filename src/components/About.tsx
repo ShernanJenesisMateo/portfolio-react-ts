@@ -22,11 +22,11 @@ const About = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="-translate-x-20 w-1/4 h-3/4 flex items-center justify-center">
+                        {/* <div className="-translate-x-20 w-1/4 h-3/4 flex items-center justify-center">
                             <img className="-translate-x-20 scale-125"
                                 src="/assets/images/myPic_withoutBG.png"
                                 alt="Shernan Jenesis Mateo" />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="mt-20 font-semibold text-xl w-full" id="SkillsSectionId">
                         <p>I've been using these awesome tools and technologies to bring my projects to life!</p>

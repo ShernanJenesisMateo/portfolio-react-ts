@@ -74,3 +74,35 @@ html {
 .dimmed:hover {
   filter: brightness(70%);
 }
+
+@keyframes underline-animation {
+  from {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  to {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.underline-animation {
+  position: relative;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust this value to match your underline-offset */
+  width: 100%;
+  height: 2px; /* Adjust this value to match your decoration thickness */
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+}
