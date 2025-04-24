@@ -22,7 +22,7 @@ export const milestones = [
     {
         date: "July 2023",
         title: "Tarlac State University",
-        description: "Earned my degree in Information Technology\nCum Laude",
+        description: "Earned my degree in BS Information Technology as Cum Laude",
         position: "timeline-end",
         link:"https://www.tsu.edu.ph/"
     },
