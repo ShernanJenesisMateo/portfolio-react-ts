@@ -83,6 +83,7 @@ function App() {
       <div className="main-section-scroll overflow-y-auto overflow-x-hidden mt-16 h-full relative">
         <div className="flex items-center justify-center h-full relative " id="HeroSectionId">
           <div className='w-full mb-20'>
+            test
             <Hero />
           </div>
         </div>
